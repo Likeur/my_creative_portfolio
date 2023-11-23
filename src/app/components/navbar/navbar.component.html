@@ -11,9 +11,9 @@
                 <ul class="flex items-center">
                     @for (item of navLinks; track item.id) {
                         <li class="group ml-3 h-6 px-3 overflow-hidden">
-                            <a routerLink="{{item.route}}" class="flex flex-col group-hover:-translate-y-6 duration-500"> 
+                            <a routerLink="{{item.route}}" routerLinkActive="text-orange-700" class="flex flex-col group-hover:-translate-y-6 duration-500"> 
                                 <span>{{item.title}} </span>
-                                <span>{{item.title}} </span>
+                                <span class="text-orange-700">{{item.title}} </span>
                             </a>
                         </li>
                     }
