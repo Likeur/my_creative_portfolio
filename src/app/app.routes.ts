@@ -16,4 +16,9 @@ export const routes: Routes = [
         title: 'contact',
         loadComponent: () => import('./pages/contactpage/contactpage.component')
     },
+    {
+        path:'',
+        redirectTo:'home',
+        pathMatch: 'full'
+    },
 ];
