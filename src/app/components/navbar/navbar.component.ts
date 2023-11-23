@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RouterModule } from '@angular/router';
+import { gsap } from 'gsap';
 
 @Component({
   selector: 'app-navbar',
@@ -26,4 +27,19 @@ export class NavbarComponent {
       route: '/contact'
     }
   ]
+  ngOnInit() {
+    this.AnimateHeight();
+  }
+  AnimateHeight() {
+    gsap.fromTo('#navbar',{
+      scaleY: '0',
+      opacity: 0,
+      transformOrigin: 'top'
+    },{
+      scaleY: 1,
+      duration: 1,
+      opacity: 1
+    })
+  }
+  
 }

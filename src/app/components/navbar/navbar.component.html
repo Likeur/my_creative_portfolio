@@ -1,5 +1,5 @@
 <main>
-    <div class="container mx-auto text-white dark:text-black p-5">
+    <div id="navbar" class="container overflow-hidden mx-auto bg-black/80 text-white dark:text-black p-5">
         <nav>
             <div class="flex justify-between items-center">
                 <div class="group ml-5 h-9 font-semibold text-2xl px-3 overflow-hidden">
@@ -8,16 +8,18 @@
                         <span>Likeur. </span>
                     </a>
                 </div>
-                <ul class="flex">
+                <ul class="flex items-center">
                     @for (item of navLinks; track item.id) {
-                        <li class="group ml-5 h-6 px-3 overflow-hidden">
+                        <li class="group ml-3 h-6 px-3 overflow-hidden">
                             <a routerLink="{{item.route}}" class="flex flex-col group-hover:-translate-y-6 duration-500"> 
                                 <span>{{item.title}} </span>
                                 <span>{{item.title}} </span>
                             </a>
                         </li>
                     }
+                    <a routerLink="" class="ml-3 bg-white text-black hover:bg-black duration-300 hover:border hover:text-white text-xs hover:border-white/30 rounded-full p-2">Get in Touch</a>
                 </ul>
+                
             </div>
         </nav>
     </div>
