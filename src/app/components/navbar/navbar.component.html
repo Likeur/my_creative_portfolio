@@ -1,1 +1,24 @@
-<p>navbar works!</p>
+<main>
+    <div class="container mx-auto text-white dark:text-black p-5">
+        <nav>
+            <div class="flex justify-between items-center">
+                <div class="group ml-5 h-9 font-semibold text-2xl px-3 overflow-hidden">
+                    <a routerLink="/home" class="flex flex-col group-hover:-translate-y-8 duration-500"> 
+                        <span>Likeur. </span>
+                        <span>Likeur. </span>
+                    </a>
+                </div>
+                <ul class="flex">
+                    @for (item of navLinks; track item.id) {
+                        <li class="group ml-5 h-6 px-3 overflow-hidden">
+                            <a routerLink="{{item.route}}" class="flex flex-col group-hover:-translate-y-6 duration-500"> 
+                                <span>{{item.title}} </span>
+                                <span>{{item.title}} </span>
+                            </a>
+                        </li>
+                    }
+                </ul>
+            </div>
+        </nav>
+    </div>
+</main>
