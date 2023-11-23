@@ -8,6 +8,6 @@ import { CommonModule } from '@angular/common';
   templateUrl: './workpage.component.html',
   styles: ``
 })
-export class WorkpageComponent {
+export default class WorkpageComponent {
 
 }
