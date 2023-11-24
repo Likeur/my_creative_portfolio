@@ -18,7 +18,7 @@ export class NavbarComponent {
     },
     {
       id:2,
-      title : 'services',
+      title : 'Services',
       route: '/service'
     },
     {
