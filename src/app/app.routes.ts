@@ -9,7 +9,24 @@ export const routes: Routes = [
     {
         path:'work',
         title: 'Work',
-        loadComponent: () => import('./pages/workpage/workpage.component')
+        loadComponent: () => import('./pages/workpage/workpage.component'),
+        children: [
+            {
+                path:'Rdctechcommunities',
+                title: 'Rdctechcommunities',
+                loadComponent: () => import('./pages/workpage/workpage.component'),
+            },
+            {
+                path:'Animate',
+                title: 'Animate',
+                loadComponent: () => import('./pages/workpage/workpage.component'),
+            },
+            {
+                path:'Design_graphique',
+                title: 'Design Graphiqe',
+                loadComponent: () => import('./pages/workpage/workpage.component'),
+            },
+        ]
     },
     {
         path:'service',
