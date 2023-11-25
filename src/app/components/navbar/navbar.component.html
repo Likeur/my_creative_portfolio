@@ -8,7 +8,7 @@
                         <span>Likeur. </span>
                     </a>
                 </div>
-                <ul class="flex items-center">
+                <ul class="absolute justify-center z-50 h-screen w-screen top-0 left-0 bg-black lg:w-min lg:h-min lg:relative flex flex-col lg:flex-row items-center">
                     @for (item of navLinks; track item.id) {
                         <li class="group ml-3 h-6 px-3 overflow-hidden">
                             <a routerLink="{{item.route}}" routerLinkActive="text-orange-600" class="flex flex-col group-hover:-translate-y-6 duration-500"> 
@@ -19,6 +19,10 @@
                     }
                     <a routerLink="" class="ml-3 bg-white text-black hover:bg-black duration-300 hover:border hover:text-white text-xs hover:border-white/30 rounded-full p-2">Get in Touch</a>
                 </ul>
+                <button class="lg:hidden">
+                    <span class="rounded-full h-0.5 w-7 block bg-white"></span>
+                    <span class="rounded-full h-0.5 w-7 block mt-2 bg-white"></span>
+                </button>
                 
             </div>
         </nav>
