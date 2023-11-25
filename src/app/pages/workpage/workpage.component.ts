@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { NavbarComponent } from '../../components/navbar/navbar.component';
 import { gsap } from 'gsap';
@@ -9,11 +9,11 @@ import { gsap } from 'gsap';
   templateUrl: './workpage.component.html',
 
 })
-export default class WorkpageComponent {
+export default class WorkpageComponent implements OnInit {
   AnimeTextHome(){
     const tl = gsap.timeline();
 
-    tl.fromTo('.text-home',{
+    tl.fromTo('.text-home-4',{
       opacity: 0,
       y: 50
     },{

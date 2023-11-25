@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RouterModule } from '@angular/router';
 import { gsap } from 'gsap';
@@ -9,7 +9,7 @@ import { gsap } from 'gsap';
   imports: [CommonModule, RouterModule],
   templateUrl: './navbar.component.html',
 })
-export class NavbarComponent {
+export class NavbarComponent implements OnInit {
   navLinks = [
     {
       id:1,
@@ -27,9 +27,6 @@ export class NavbarComponent {
       route: '/contact'
     }
   ]
-  ngOnInit() {
-    this.AnimateHeight();
-  }
   AnimateHeight() {
     gsap.fromTo('#navbar',{
       scaleY: '0',
@@ -41,5 +38,18 @@ export class NavbarComponent {
       opacity: 1
     })
   }
-  
+  ngOnInit() {
+    this.AnimateHeight();
+  }
+
+  toggleMenu(){
+    const Nav = document.querySelector('#navigation')!
+    const barUn = document.querySelector('#barUn')!
+    const barDeux = document.querySelector('#barDeux')!
+
+    Nav.classList.toggle('h-screen')
+    barUn.classList.toggle('rotate-45')
+    barDeux.classList.toggle('-rotate-45')
+    barDeux.classList.toggle('mt-2')
+  }
 }

@@ -1,27 +1,27 @@
-<main>
-    <div id="navbar" class="container overflow-hidden mx-auto bg-black/80 text-white dark:text-black p-5">
+<main class="relative z-40">
+    <div id="navbar" class="relative z-40 mx-auto bg-black/80 text-white dark:text-black p-5">
         <nav>
             <div class="flex justify-between items-center">
-                <div class="group ml-5 h-9 font-semibold text-2xl px-3 overflow-hidden">
+                <div class="group relative z-50 ml-5 h-9 font-semibold text-2xl lg:px-3 overflow-hidden">
                     <a routerLink="/home" class="flex flex-col group-hover:-translate-y-8 duration-500"> 
                         <span>Likeur. </span>
                         <span>Likeur. </span>
                     </a>
                 </div>
-                <ul class="absolute justify-center z-50 h-screen w-screen top-0 left-0 bg-black lg:w-min lg:h-min lg:relative flex flex-col lg:flex-row items-center">
+                <ul id="navigation" class="absolute justify-center z-40 h-0 overflow-hidden w-screen duration-700 top-0 left-0 bg-black lg:w-[35vw] lg:h-min lg:relative flex flex-col lg:flex-row items-center">
                     @for (item of navLinks; track item.id) {
-                        <li class="group ml-3 h-6 px-3 overflow-hidden">
-                            <a routerLink="{{item.route}}" routerLinkActive="text-orange-600" class="flex flex-col group-hover:-translate-y-6 duration-500"> 
+                        <li (click)="toggleMenu()" class="group ml-3 h-6 text-2xl mt-5 lg:mt-0 lg:text-sm px-3 lg:overflow-hidden">
+                            <a routerLink="{{item.route}}" routerLinkActive="text-orange-600" class="flex flex-col group-hover:-translate-y-0 lg:group-hover:-translate-y-6 duration-500"> 
                                 <span>{{item.title}} </span>
-                                <span class="text-orange-600">{{item.title}} </span>
+                                <span class="text-orange-600 hidden lg:block">{{item.title}} </span>
                             </a>
                         </li>
                     }
-                    <a routerLink="" class="ml-3 bg-white text-black hover:bg-black duration-300 hover:border hover:text-white text-xs hover:border-white/30 rounded-full p-2">Get in Touch</a>
+                    <a routerLink="" (click)="toggleMenu()" class="ml-3 block mt-5 lg:mt-0 bg-white text-black hover:bg-black duration-300 hover:border hover:text-white text-xs hover:border-white/30 rounded-full p-2 px-10 lg:px-0 ">Get in Touch</a>
                 </ul>
-                <button class="lg:hidden">
-                    <span class="rounded-full h-0.5 w-7 block bg-white"></span>
-                    <span class="rounded-full h-0.5 w-7 block mt-2 bg-white"></span>
+                <button (click)="toggleMenu()" class="lg:hidden relative z-50">
+                    <span id="barUn" class="duration-500 rounded-full h-0.5 w-7 block bg-white"></span>
+                    <span id="barDeux" class="duration-500 rounded-full h-0.5 w-7 block mt-2 bg-white"></span>
                 </button>
                 
             </div>
