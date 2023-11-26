@@ -12,7 +12,7 @@ export const routes: Routes = [
         loadComponent: () => import('./pages/workpage/workpage.component'),
         children: [
             {
-                path:'Rdctechcommunities',
+                path:'rdctechcommunities',
                 title: 'Rdctechcommunities',
                 loadComponent: () => import('./pages/workpage/workpage.component'),
             },
@@ -22,8 +22,8 @@ export const routes: Routes = [
                 loadComponent: () => import('./pages/workpage/workpage.component'),
             },
             {
-                path:'Design_graphique',
-                title: 'Design Graphiqe',
+                path:'freeportfolio',
+                title: 'freeportfolio',
                 loadComponent: () => import('./pages/workpage/workpage.component'),
             },
         ]

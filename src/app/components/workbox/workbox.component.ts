@@ -11,4 +11,18 @@ import { RouterModule } from '@angular/router';
 })
 export class WorkboxComponent {
 
+  projectLinks = [
+    {
+      id:1,
+      title:"Rdc Tech Communities",
+      route : "/work/rdctechcommunities",
+      image : "../../../assets/img/rdctech.png"
+    },
+    {
+      id:2,
+      title:"free portfolio",
+      route : "/work/freeportfolio",
+      image : "../../../assets/img/freeportfolio.png"
+    },
+  ]
 }
