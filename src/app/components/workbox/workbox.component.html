@@ -4,7 +4,14 @@
             <a routerLink="{{item.route}}" class="group">
                 <div class=" h-96 bg-slate-200 relative cursor-pointer flex justify-center items-center rounded-3xl p-2 overflow-hidden">
                     <img src="{{item.image}}" alt="" class="w-[500px] group-hover:scale-105 duration-300">
+                    <div class="h-10 w-10 bg-white opacity-0 translate-y-2 group-hover:opacity-100 flex justify-center items-center text-2xl group-hover:-rotate-6 group-hover:translate-y-0 duration-300 scale-50 group-hover:scale-100 shadow-sm rounded-full absolute top-3 left-3">
+
+                    </div>
                 </div> 
+                <span class="mt-2 text-white">
+                    <span>projet 1</span>
+                    <span> {{item.title}} </span>
+                </span>
             </a>
         }
         <a routerLink="" class="group">
