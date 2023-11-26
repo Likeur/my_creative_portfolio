@@ -11,9 +11,9 @@
                 <ul id="navigation" class="absolute justify-center z-40 h-0 overflow-hidden w-screen duration-700 top-0 left-0 bg-black lg:w-[35vw] lg:h-min lg:relative flex flex-col lg:flex-row items-center">
                     @for (item of navLinks; track item.id) {
                         <li (click)="toggleMenu()" class="group ml-3 h-6 text-2xl mt-5 lg:mt-0 lg:text-[1rem] px-3 lg:overflow-hidden">
-                            <a routerLink="{{item.route}}" routerLinkActive="text-orange-600" class="flex flex-col group-hover:-translate-y-0 lg:group-hover:-translate-y-9 duration-500"> 
+                            <a routerLink="{{item.route}}" routerLinkActive="text-gray-300" class="flex flex-col group-hover:-translate-y-0 lg:group-hover:-translate-y-9 duration-500"> 
                                 <span>{{item.title}} </span>
-                                <span class="text-orange-600 hidden lg:block">{{item.title}} </span>
+                                <span class="text-gray-300 hidden lg:block">{{item.title}} </span>
                             </a>
                         </li>
                     }
