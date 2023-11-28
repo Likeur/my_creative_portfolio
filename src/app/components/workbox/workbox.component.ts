@@ -15,12 +15,14 @@ export class WorkboxComponent {
     {
       id:1,
       title:"Rdc Tech Communities",
+      description: "an open source project",
       route : "/work/rdctechcommunities",
       image : "../../../assets/img/rdctech.png"
     },
     {
       id:2,
       title:"free portfolio",
+      description: "an open source project",
       route : "/work/freeportfolio",
       image : "../../../assets/img/freeportfolio.png"
     },

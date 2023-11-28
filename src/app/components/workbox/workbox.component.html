@@ -8,10 +8,12 @@
                         <i class='bx bx-right-arrow-alt'></i>
                     </div>
                 </div> 
-                <span class="mt-2 text-white">
-                    <span>projet 1</span>
-                    <span> {{item.title}} </span>
-                </span>
+                <li class="ml-3 h-6 text-2xl mt-5 lg:mt-3 lg:text-[1rem] px-3 lg:overflow-hidden">
+                    <p class="flex flex-col -translate-y-9 group-hover:-translate-y-0 lg:group-hover:-translate-y-[4.25rem] duration-500"> 
+                        <span class="text-gray-300">{{item.title}} <i class='bx bx-right-arrow-alt -rotate-45 mt-1'></i></span>
+                        <span class="text-gray-300 hidden lg:block">{{item.description}} <i class='bx bx-right-arrow-alt -rotate-45 mt-1'></i></span>
+                    </p>
+                </li>
             </a>
         }
         <a routerLink="" class="group">
