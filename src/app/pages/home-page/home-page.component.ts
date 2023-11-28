@@ -3,10 +3,11 @@ import { CommonModule } from '@angular/common';
 import { NavbarComponent } from '../../components/navbar/navbar.component';
 import { gsap } from 'gsap';
 import { WorkboxComponent } from '../../components/workbox/workbox.component';
+import { FooterComponent } from '../../components/footer/footer.component';
 @Component({
   selector: 'app-home-page',
   standalone: true,
-  imports: [CommonModule, NavbarComponent, WorkboxComponent],
+  imports: [CommonModule, NavbarComponent, WorkboxComponent, FooterComponent],
   templateUrl: './home-page.component.html',
 })
 export default class HomePageComponent {
