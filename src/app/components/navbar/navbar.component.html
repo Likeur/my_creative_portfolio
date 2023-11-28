@@ -1,5 +1,5 @@
-<main class="relative z-40">
-    <div id="navbar" class="relative z-40 mx-auto bg-black/80 text-white dark:text-black p-5">
+<main class="z-40 sticky top-0">
+    <div id="navbar" class="relative z-40 mx-auto bg-black/90 backdrop-blur-md text-white dark:text-black p-5">
         <nav>
             <div class="flex justify-between items-center">
                 <div class="group relative z-50 ml-5 h-9 font-semibold text-2xl lg:px-3 overflow-hidden">
@@ -8,7 +8,7 @@
                         <span>Likeur. </span>
                     </a>
                 </div>
-                <ul id="navigation" class="absolute justify-center z-40 h-0 overflow-hidden w-screen duration-700 top-0 left-0 bg-black lg:w-[35vw] lg:h-min lg:relative flex flex-col lg:flex-row items-center">
+                <ul id="navigation" class="absolute justify-center z-40 h-0 overflow-hidden w-screen duration-700 top-0 left-0 bg-black lg:bg-transparent lg:w-[35vw] lg:h-min lg:relative flex flex-col lg:flex-row items-center">
                     @for (item of navLinks; track item.id) {
                         <li (click)="toggleMenu()" class="group ml-3 h-6 text-2xl mt-5 lg:mt-0 lg:text-[1rem] px-3 lg:overflow-hidden">
                             <a routerLink="{{item.route}}" routerLinkActive="text-gray-300" class="flex flex-col group-hover:-translate-y-0 lg:group-hover:-translate-y-9 duration-500"> 
