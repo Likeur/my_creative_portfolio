@@ -3,10 +3,11 @@ import { CommonModule } from '@angular/common';
 import { NavbarComponent } from '../../components/navbar/navbar.component';
 import { RouterModule } from '@angular/router';
 import { gsap } from 'gsap';
+import { FooterComponent } from '../../components/footer/footer.component';
 @Component({
   selector: 'app-servicepage',
   standalone: true,
-  imports: [CommonModule, NavbarComponent, RouterModule],
+  imports: [CommonModule, NavbarComponent, RouterModule, FooterComponent],
   templateUrl: './servicepage.component.html',
 })
 export default class ServicepageComponent implements OnInit {

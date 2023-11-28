@@ -2,10 +2,11 @@ import { Component, OnInit } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { NavbarComponent } from '../../components/navbar/navbar.component';
 import { gsap } from 'gsap';
+import { FooterComponent } from '../../components/footer/footer.component';
 @Component({
   selector: 'app-contactpage',
   standalone: true,
-  imports: [CommonModule, NavbarComponent],
+  imports: [CommonModule, NavbarComponent,FooterComponent],
   templateUrl: './contactpage.component.html',
 
 })
