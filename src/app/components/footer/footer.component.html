@@ -1,15 +1,15 @@
 <main class="p-4 lg:px-12 flex flex-col items-center justify-center mt-16">
    <section class="grid w-full lg:grid-cols-2">
     <div class="text-white">
-        <p class="w-96">Building Stunning website and UIs for Both Enterprise and particular, Get in touch with me for your next project</p>
-        <a routerLink=""  class="w-32 text-center mt-3 block lg:mt-8 bg-white text-black hover:bg-black duration-300 hover:border hover:text-white text-xs hover:border-white/30 rounded-full p-2 px-10 lg:px-3 ">Get in Touch</a>
+        <p class="w-full text-center lg:text-left lg:w-96">Building Stunning website and UIs for Both Enterprise and particular, Get in touch with me for your next project</p>
+        <a routerLink=""  class="lg:w-32 text-center mt-3 block lg:mt-8 bg-white text-black hover:bg-black duration-300 hover:border hover:text-white text-xs hover:border-white/30 rounded-full p-2 px-10 lg:px-3 ">Get in Touch</a>
     </div>
-    <div class="grid lg:grid-cols-2 ml-10">
+    <div class="grid grid-cols-2 mt-10 lg:mt-0 ml-10">
         <div>
-            <h2 class="text-white">Explore</h2>
+            <h2 class="text-white text-xl mt-5 lg:mt-0">Explore</h2>
             <div class="mt-5">
                 @for (item of footerLinks; track item.id) {
-                    <li class="group h-6 text-2xl mt-5 lg:mt-3 lg:text-[1rem] lg:overflow-hidden">
+                    <li class="group h-6 text-lg mt-5 lg:mt-3 lg:text-[1rem] lg:overflow-hidden">
                         <a routerLink="{{item.route}}" routerLinkActive="text-gray-300" class="flex flex-col -translate-y-9 group-hover:-translate-y-0 lg:group-hover:-translate-y-[4.25rem] duration-500"> 
                             <span class="text-white">{{item.title}} </span>
                             <span class="text-gray-300 hidden lg:block">{{item.title}} </span>
@@ -18,20 +18,20 @@
                 }
             </div>
         </div>
-        <div class="flex flex-col">
-            <li class="group h-6 text-2xl mt-5 lg:mt-3 lg:text-[1rem] px-3 lg:overflow-hidden">
+        <div class="flex flex-col mt-5">
+            <li class="group h-6 lg:text-2xl mt-5 lg:mt-3 lg:text-[1rem] px-3 lg:overflow-hidden">
                 <a href="" class="flex flex-col -translate-y-9 group-hover:-translate-y-0 lg:group-hover:-translate-y-[4.25rem] duration-500"> 
                     <span class="text-white">Linkedin </span>
                     <span class="text-gray-300 hidden lg:block">Linkedin </span>
                 </a>
             </li>
-            <li class="group h-6 text-2xl mt-5 lg:mt-3 lg:text-[1rem] px-3 lg:overflow-hidden">
+            <li class="group h-6 lg:text-2xl mt-5 lg:mt-3 lg:text-[1rem] px-3 lg:overflow-hidden">
                 <a href="" class="flex flex-col -translate-y-9 group-hover:-translate-y-0 lg:group-hover:-translate-y-[4.25rem] duration-500"> 
                     <span class="text-white">Github </span>
                     <span class="text-gray-300 hidden lg:block">Github </span>
                 </a>
             </li>
-            <li class="group h-6 text-2xl mt-5 lg:mt-3 lg:text-[1rem] px-3 lg:overflow-hidden">
+            <li class="group h-6 lg:text-2xl mt-5 lg:mt-3 lg:text-[1rem] px-3 lg:overflow-hidden">
                 <a href="" class="flex flex-col -translate-y-9 group-hover:-translate-y-0 lg:group-hover:-translate-y-[4.25rem] duration-500"> 
                     <span class="text-white"> Twitter(X) </span>
                     <span class="text-gray-300 hidden lg:block"> Twitter(X) </span>
